@@ -1,0 +1,26 @@
+{
+    "profileId": "https://jajaj.sososo",
+    "profileType": "DEFAULT",
+    "entries": [
+        {
+            "id": "idi",
+            "label": [
+                {
+                    "lang": "de",
+                    "value": "Wortanzahl"
+                }
+            ],
+            "value": [
+                {
+                    "id": "kkkk",
+                    "text": [
+                        {
+                            "lang": "de",
+                            "value": "jaja"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

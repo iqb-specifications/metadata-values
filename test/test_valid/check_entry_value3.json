@@ -1,0 +1,20 @@
+{
+    "profileId": "https://jajaj.sososo",
+    "profileType": "DEFAULT",
+    "entries": [
+        {
+            "id": "idi",
+            "label": [
+                {
+                    "lang": "de",
+                    "value": "Wortanzahl"
+                },
+                {
+                    "lang": "en",
+                    "value": "Word Count"
+                }
+            ],
+            "value": "3"
+        }
+    ]
+}
