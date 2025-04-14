@@ -12,6 +12,7 @@
     "lib": ["es2016", "dom"],
     "rootDir": "."
   },
-  "include": ["*.interface.ts"],
-  "exclude": ["test.ts", "jest.config.ts", "dist","public","node_modules"]
+  "files": [
+    "metadata-values.interface.ts"
+  ]
 }
