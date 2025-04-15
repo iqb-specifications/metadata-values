@@ -10,14 +10,9 @@
       "description": "Identifier for the metadata profile",
       "minLength": 1
     },
-    "profileType": {
-      "type": "string",
-      "description": "Specifies how to use the metadata of this profile.",
-      "enum": [
-        "DEFAULT",
-        "ITEM_METRICS",
-        "ARCHIVE"
-      ]
+    "order": {
+      "type": "integer",
+      "description": "Specifies the position of this profile if more than one are used. Set to -1 if you want to hide/disable the profile."
     },
     "entries": {
       "type": "array",

@@ -16,4 +16,4 @@ Read more:
 
 ## 2.0
 
-* Ersetze `isCurrent` durch `profileType`, um flexibler verschiedene Profile zu handhaben
+* Ersetze `isCurrent` durch `order`, um bei Nutzung verschiedener Profile die Reihenfolge zu setzen; `-1` ist als "Ausblenden/Verbergen" definiert
