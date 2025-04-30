@@ -6,6 +6,7 @@ Data interface for storing metadata to objects based on vocabularies and profile
 * JSON Schema (see `metadata-values.schema.json`)
 * Schema documentation based on [AsyncAPI Generator](https://github.com/asyncapi/generator)
 * type definitions for TypeScript (see npm-link above)
+* refer to a specific schema version with perma-id: `w3id.org/iqb/spec/metadata-values/\[version\]`
 
 Read more:
 
@@ -13,6 +14,13 @@ Read more:
 * [Learn about TBA](https://iqb-berlin.github.io/tba-info/) (German only)
 
 # Change log
+
+## 3.0
+
+* Textversion ist nicht mehr übergreifend für alle Value Types definiert, sondern für jeden Typ spezifisch:
+  - `asText` für einfachen Datentyp
+  - `label` für Vokabular-Einträge
+* bei Vokabular-Einträgen: Umbenennen `text` zu `annotation`
 
 ## 2.0
 

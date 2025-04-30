@@ -1,24 +1,27 @@
-export interface TextWithLanguage {
-  "lang": string,
-  "value": string
+export interface LanguageCodedText {
+  lang: string,
+  value: string
 }
 
-export interface TextsWithLanguageAndId {
+export interface VocabularyEntry {
   id: string;
-  text: TextWithLanguage[];
+  label: LanguageCodedText[];
+  annotation: LanguageCodedText[];
 }
 
-export type ProfileType = 'DEFAULT' | 'ITEM_METRICS' | 'ARCHIVE';
+export interface SimpleValue {
+  raw: string;
+  asText: LanguageCodedText[];
+}
 
-export interface MetadataValuesEntry {
+export interface MetadataValue {
   id: string;
-  label: TextWithLanguage[];
-  value: TextsWithLanguageAndId[] | TextWithLanguage[] | string;
-  valueAsText: TextWithLanguage | TextWithLanguage[];
+  label: LanguageCodedText[];
+  value: VocabularyEntry[] | LanguageCodedText[] | SimpleValue;
 }
 
-export interface MetadataValues {
+export interface MetadataProfileValues {
   profileId: string;
-  profileType?: ProfileType;
-  entries: MetadataValuesEntry[];
+  order: number;
+  entries: MetadataValue[];
 }
