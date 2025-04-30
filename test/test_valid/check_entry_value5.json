@@ -15,7 +15,13 @@
                 }
             ],
             "value": [{
-                "id": "3"
+                "id": "3",
+                "label": [
+                    {
+                        "lang": "en",
+                        "value": "Primary School"
+                    }
+                ]
             }]
         }
     ]

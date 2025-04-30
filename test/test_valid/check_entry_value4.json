@@ -13,10 +13,16 @@
             "value": [
                 {
                     "id": "kkkk",
-                    "text": [
+                    "label": [
                         {
                             "lang": "de",
                             "value": "jaja"
+                        }
+                    ],
+                    "annotation": [
+                        {
+                            "lang": "de",
+                            "value": "annotation jaja"
                         }
                     ]
                 }

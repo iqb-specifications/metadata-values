@@ -3,7 +3,7 @@
     "order": 0,
     "entries": [
         {
-            "id": "",
+            "id": "22",
             "label": [
                 {
                     "lang": "de",
@@ -12,8 +12,7 @@
             ],
             "value": [
                 {
-                    "lang": "de",
-                    "value": "jaja"
+                    "lang": "de"
                 }
             ]
         }

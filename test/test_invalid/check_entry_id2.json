@@ -3,7 +3,9 @@
     "order": 0,
     "entries": [
         {
-            "value": "soso"
+            "value": {
+                "raw": "soso"
+            }
         }
     ]
 }

@@ -4,7 +4,9 @@
     "entries": [
         {
             "id": "A",
-            "value": "soso"
+            "value": {
+                "raw": "soso"
+            }
         }
     ]
 }

@@ -1,5 +1,5 @@
 {
-  "$id": "metadata-values@iqb-standard@2.0",
+  "$id": "metadata-values@iqb-standard@3.0",
   "$schema": "http://json-schema.org/draft-07/schema#",
   "title": "Metadata Values",
   "description": "Data structure to store metadata",
@@ -25,27 +25,26 @@
             "minLength": 1
           },
           "label": {
-            "$ref": "#/definitions/multi_language_text"
+            "$ref": "#/$defs/language_coded_texts"
           },
           "value": {
             "anyOf": [
               {
-                "$ref": "#/definitions/multi_language_text"
+                "$ref": "#/$defs/language_coded_texts"
               },
               {
-                "$ref": "#/definitions/multi_language_text_with_id"
+                "$ref": "#/$defs/vocabulary_entries"
               },
               {
-                "type": "string",
-                "description": "Used for storing numbers and boolean ('true', 'false') only."
+                "$ref": "#/$defs/simple_value"
               }
             ]
-          },
-          "valueAsText": {
-            "$ref": "#/definitions/multi_language_text"
           }
         },
-        "required": ["id", "value"]
+        "required": [
+          "id",
+          "value"
+        ]
       },
       "minItems": 1
     }
@@ -54,8 +53,9 @@
     "profileId",
     "entries"
   ],
-  "definitions": {
-    "multi_language_text": {
+  "additionalProperties": false,
+  "$defs": {
+    "language_coded_texts": {
       "type": "array",
       "description": "Used for storing the input of texts. This type applies also in cases when only one language is used.",
       "items": {
@@ -74,13 +74,14 @@
         "required": [
           "lang",
           "value"
-        ]
+        ],
+        "additionalProperties": false
       },
       "minItems": 1
     },
-    "multi_language_text_with_id": {
+    "vocabulary_entries": {
       "type": "array",
-      "description": "Used for storing the selection of vocabulary entries and (optional) additional texts.",
+      "description": "Used for storing selected vocabulary entries and (optional) additional texts.",
       "items": {
         "type": "object",
         "properties": {
@@ -89,13 +90,36 @@
             "minLength": 1,
             "description": "Full id of the vocabulary entry as url - including the vocabulary url"
           },
-          "text": {
-            "$ref": "#/definitions/multi_language_text"
+          "label": {
+            "$ref": "#/$defs/language_coded_texts"
+          },
+          "annotation": {
+            "$ref": "#/$defs/language_coded_texts"
           }
         },
-        "required": ["id"]
+        "required": [
+          "id"
+        ],
+        "additionalProperties": false
       },
       "minItems": 1
+    },
+    "simple_value": {
+      "type": "object",
+      "description": "Used for uncoded text, numbers and boolean.",
+      "properties": {
+        "raw": {
+          "type": "string",
+          "description": "Pure value. Numbers and boolean in JavaScript toString() notation ('true', 'false', '23.566')."
+        },
+        "asText": {
+          "$ref": "#/$defs/language_coded_texts"
+        }
+      },
+      "required": [
+        "raw"
+      ],
+      "additionalProperties": false
     }
   }
 }
