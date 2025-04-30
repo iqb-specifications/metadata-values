@@ -6,7 +6,7 @@ Data interface for storing metadata to objects based on vocabularies and profile
 * JSON Schema (see `metadata-values.schema.json`)
 * Schema documentation based on [AsyncAPI Generator](https://github.com/asyncapi/generator)
 * type definitions for TypeScript (see npm-link above)
-* refer to a specific schema version with perma-id: `w3id.org/iqb/spec/metadata-values/\[version\]`
+* refer to a specific schema version with perma-id: `w3id.org/iqb/spec/metadata-values/[version]`
 
 Read more:
 
