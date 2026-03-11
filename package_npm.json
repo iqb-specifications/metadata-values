@@ -1,6 +1,6 @@
 {
   "name": "@iqbspecs/metadata-values",
-  "version": "3.0.0",
+  "version": "3.0.1",
   "author": "IQB - Institut zur Qualitätsentwicklung im Bildungswesen",
   "license": "CC0 1.0",
   "description": "Data interface: metadata-values",
@@ -12,6 +12,6 @@
     "url": "https://github.com/iqb-specifications/metadata-values/issues"
   },
   "homepage": "https://github.com/iqb-specifications/metadata-values#readme",
-  "main": "index.js",
-  "types": "index.d.ts"
+  "main": "metadata-values.interface.ts",
+  "types": "metadata-values.interface.d.ts"
 }
