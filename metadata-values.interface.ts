@@ -5,23 +5,23 @@ export interface LanguageCodedText {
 
 export interface VocabularyEntry {
   id: string;
-  label: LanguageCodedText[];
-  annotation: LanguageCodedText[];
+  label?: LanguageCodedText[];
+  annotation?: LanguageCodedText[];
 }
 
 export interface SimpleValue {
   raw: string;
-  asText: LanguageCodedText[];
+  asText?: LanguageCodedText[];
 }
 
 export interface MetadataValue {
   id: string;
-  label: LanguageCodedText[];
+  label?: LanguageCodedText[];
   value: VocabularyEntry[] | LanguageCodedText[] | SimpleValue;
 }
 
 export interface MetadataProfileValues {
   profileId: string;
-  order: number;
+  order?: number;
   entries: MetadataValue[];
 }
