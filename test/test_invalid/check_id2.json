@@ -1,12 +1,14 @@
-{
-    "profileId": true,
-    "order": 0,
-    "entries": [
-        {
-            "id": "22",
-            "value": {
-                "raw": "soso"
+[
+    {
+        "profileId": true,
+        "order": 0,
+        "entries": [
+            {
+                "id": "22",
+                "value": {
+                    "raw": "soso"
+                }
             }
-        }
-    ]
-}
+        ]
+    }
+]

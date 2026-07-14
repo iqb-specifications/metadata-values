@@ -1,32 +1,34 @@
-{
-    "profileId": "https://jajaj.sososo",
-    "order": 0,
-    "entries": [
-        {
-            "id": "idi",
-            "label": [
-                {
-                    "lang": "de",
-                    "value": "Wortanzahl"
-                }
-            ],
-            "value": [
-                {
-                    "id": "kkkk",
-                    "label": [
-                        {
-                            "lang": "de",
-                            "value": "jaja"
-                        }
-                    ],
-                    "annotation": [
-                        {
-                            "lang": "de",
-                            "value": "annotation jaja"
-                        }
-                    ]
-                }
-            ]
-        }
-    ]
-}
+[
+    {
+        "profileId": "https://jajaj.sososo",
+        "order": 0,
+        "entries": [
+            {
+                "id": "idi",
+                "label": [
+                    {
+                        "lang": "de",
+                        "value": "Wortanzahl"
+                    }
+                ],
+                "value": [
+                    {
+                        "id": "kkkk",
+                        "label": [
+                            {
+                                "lang": "de",
+                                "value": "jaja"
+                            }
+                        ],
+                        "annotation": [
+                            {
+                                "lang": "de",
+                                "value": "annotation jaja"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+]

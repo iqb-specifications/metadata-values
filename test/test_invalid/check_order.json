@@ -1,12 +1,14 @@
-{
-    "profileId": "https://jajaj.sososo",
-    "order": true,
-    "entries": [
-        {
-            "id": "22",
-            "value": {
-                "raw": "soso"
+[
+    {
+        "profileId": "https://jajaj.sososo",
+        "order": true,
+        "entries": [
+            {
+                "id": "22",
+                "value": {
+                    "raw": "soso"
+                }
             }
-        }
-    ]
-}
+        ]
+    }
+]

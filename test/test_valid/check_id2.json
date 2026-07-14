@@ -1,12 +1,14 @@
-{
-    "profileId": "Iassue9982",
-    "order": 0,
-    "entries": [
-        {
-            "id": "22",
-            "value": {
-                "raw": "soso"
+[
+    {
+        "profileId": "Iassue9982",
+        "order": 0,
+        "entries": [
+            {
+                "id": "22",
+                "value": {
+                    "raw": "soso"
+                }
             }
-        }
-    ]
-}
+        ]
+    }
+]

@@ -14,6 +14,10 @@ Read more:
 * [Learn about TBA](https://iqb-berlin.github.io/tba-info/) (German only)
 
 # Change log
+## 3.0.3
+
+* Metadata Values würden von „type object“ auf „array“ aktualisiert.
+
 ## 3.0.2
 
 * Mehrere Felder in metadata-values.interface.ts würden mit Optionale Marker ergänzt, damit das Interface dem Schema entspricht.

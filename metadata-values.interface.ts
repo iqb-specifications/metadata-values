@@ -25,3 +25,5 @@ export interface MetadataProfileValues {
   order?: number;
   entries: MetadataValue[];
 }
+
+export type MetadataValues = MetadataProfileValues[];
